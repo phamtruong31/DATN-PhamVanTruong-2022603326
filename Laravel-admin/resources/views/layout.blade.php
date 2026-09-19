@@ -105,6 +105,32 @@
         </main>
 
     </section>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const avatar = document.getElementById('avatar');
+    const accountMenu = document.getElementById('accountMenu');
+
+    if (!avatar || !accountMenu) return;
+
+    avatar.addEventListener('click', function (e) {
+        e.stopPropagation();
+
+        if (accountMenu.style.display === 'block') {
+            accountMenu.style.display = 'none';
+        } else {
+            accountMenu.style.display = 'block';
+        }
+    });
+
+    document.addEventListener('click', function () {
+        accountMenu.style.display = 'none';
+    });
+
+    accountMenu.addEventListener('click', function (e) {
+        e.stopPropagation();
+    });
+});
+</script>
 
 </body>
 </html>

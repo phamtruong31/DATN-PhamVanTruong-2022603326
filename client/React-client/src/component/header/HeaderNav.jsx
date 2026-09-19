@@ -136,13 +136,13 @@ export default function HeaderNav() {
       <div className="container flex items-center justify-between">
         <>
           <nav className="hidden lg:inline-block">
-            <ul className="flex items-center gap-x-0 text-sm font-medium text-white xl:gap-x-2 xl:text-base xl:font-semibold">
+            <ul className="flex items-center gap-x-0 py-2 text-lg font-medium text-white xl:gap-x-2 xl:text-lg xl:font-semibold">
               {navList.map((item) => (
                 <li key={item.id}>
                   <NavLink
                     to={item.link}
                     className={({ isActive }) =>
-                      `inline-block px-3 py-3 transition-colors duration-1000 ease-in-out hover:text-green-200 ${isActive ? "bg-secondary text-green-200" : ""}`
+                      `inline-block px-4 py-4 transition-colors duration-1000 ease-in-out hover:text-green-200 ${isActive ? "bg-secondary text-green-200" : ""}`
                     }
                   >
                     {item.title}
@@ -150,12 +150,12 @@ export default function HeaderNav() {
                 </li>
               ))}
 
-              <NavLink
+              {/* <NavLink
                 to="/san-pham?ct=discount-value"
                 className="origin-top animate-swing"
               >
                 <img src="/flash.webp" className="w-24" alt="" />
-              </NavLink>
+              </NavLink> */}
             </ul>
           </nav>
 
@@ -176,14 +176,14 @@ export default function HeaderNav() {
             <li>
               <BtnAnimation>
                 <button onClick={handlePageLike} title="Sản phẩm yêu thích">
-                  <FaHeart className="text-2xl xl:text-3xl" />
+                  <FaHeart className="text-3xl xl:text-4xl" />
                 </button>
               </BtnAnimation>
             </li>
             <li title="Giỏ hàng của bạn">
               <BtnAnimation>
                 <NavLink to={"/cart"} className="relative">
-                  <FaCartArrowDown className="text-2xl xl:text-3xl" />
+                  <FaCartArrowDown className="text-3xl xl:text-4xl" />
                   <span className="absolute -right-1 -top-1 flex h-[22px] w-[22px] -translate-y-1/2 translate-x-1/2 items-center justify-center rounded-full border-2 border-primary bg-green-400 text-xs font-semibold shadow">
                     {isCart.length}
                   </span>
@@ -195,7 +195,7 @@ export default function HeaderNav() {
               <button className="py-1">
                 {!token ? (
                   <>
-                    <FaRegUserCircle className="text-2xl xl:text-3xl" />
+                    <FaRegUserCircle className="text-3xl xl:text-4xl" />
                   </>
                 ) : (
                   <>

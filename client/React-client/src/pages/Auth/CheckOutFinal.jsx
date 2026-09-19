@@ -66,7 +66,7 @@ export default function CheckOutFinal() {
                 <>
                   <LoadingThanhToan idDonHang={fetchedData.id} />
                   <img
-                    src={`https://img.vietqr.io/image/${fetchedData.payment.bank}-${fetchedData.payment.bank_number}-compact2.png?amount=${fetchedData.total_price}&addInfo=MDH:${fetchedData.id}&accountName=NGUYEN LE ANH KHOA`}
+                    src={`https://img.vietqr.io/image/${fetchedData.payment.bank}-${fetchedData.payment.bank_number}-compact2.png?amount=${fetchedData.total_price}&addInfo=MDH:${fetchedData.id}&accountName=PHAM VAN TRUONG`}
                     alt="QR Code"
                     className="w-96"
                   />

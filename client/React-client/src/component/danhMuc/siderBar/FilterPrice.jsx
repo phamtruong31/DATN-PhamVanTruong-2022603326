@@ -5,10 +5,10 @@ import { MailOutlined } from "@ant-design/icons";
 import { Collapse } from "antd";
 import BtnAnimation from "../../shared/BtnAnimation";
 const priceRanges = [
-  { id: 1, label: "Dưới 6.000.000đ", min: 0, max: 6000000 },
-  { id: 2, label: "6.000.000đ - 10.000.000đ", min: 6000000, max: 10000000 },
-  { id: 3, label: "10.000.000đ - 20.000.000đ", min: 10000000, max: 20000000 },
-  { id: 4, label: "Trên 20.000.000đ", min: 20000000, max: null },
+  { id: 1, label: "Dưới 15.000.000đ", min: 0, max: 15000000 },
+  { id: 2, label: "15.000.000đ - 25.000.000đ", min: 15000000, max: 25000000 },
+  { id: 3, label: "25.000.000đ - 40.000.000đ", min: 25000000, max: 40000000 },
+  { id: 4, label: "Trên 40.000.000đ", min: 40000000, max: null },
 ];
 const paramsPage = "page";
 
